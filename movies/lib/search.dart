@@ -63,7 +63,7 @@ class _SearchMoviesScreenState extends State<SearchMoviesScreen> {
         child: Column(
           children: [
             Expanded(
-              flex: 4,
+              flex: MediaQuery.of(context).size.width > MediaQuery.of(context).size.height ? 1 : 3,
               child: SingleChildScrollView(
                 child: FormBuilder(
                   key: _formKey,
